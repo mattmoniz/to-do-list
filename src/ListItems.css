@@ -18,6 +18,13 @@
     cursor: pointer;
 }
 
+.list p input{
+    background-color: transparent;
+    border: 0; 
+    color: #fff;
+    font-size: 18px;
+}
+
 .faIcons{
     margin: 0 5px;
     font-size: 15px;
