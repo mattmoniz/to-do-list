@@ -1,6 +1,7 @@
 import React from 'react'
 import './ListItems.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import FlipMove from 'react-flip-move';
 
 function ListItems(props){;
     const items=props.items
@@ -12,12 +13,9 @@ function ListItems(props){;
                   <input type="text" 
                   id={item.key} 
                   value={item.text}
-                  onChange ={
-                    (e) =>{
+                  onChange ={(e) =>{
                       props.setUpdate(e.target.value, item.key)
-                    }
-                  } 
-                  />
+                    }}/>
                   <span>
                     <FontAwesomeIcon
                       className="faIcons"
@@ -30,8 +28,12 @@ function ListItems(props){;
             );
         })
     return (
-        <div>{listItems}</div>
-    )
+      <div>
+        <FlipMove duration={500} easing="ease-in-out">
+          {listItems}
+        </FlipMove>
+      </div>
+    );
 }
 
 export default ListItems;
