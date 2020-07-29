@@ -1,3 +1,5 @@
+The app can be found here: https://mattmoniz.github.io/to-do-list/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
